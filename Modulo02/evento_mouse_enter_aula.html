@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#p1").mouseenter(function(){
+                    $("p").css("background-color", "yellow");
+                });
+
+                $("#p1").mouseleave(function(){
+                    $("p").css("background-color", "red");
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+        <p id="p1">Entre na area deste paragrafo</p>
+
+    </body>
+
+
+
+</html>

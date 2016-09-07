@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Change</title>       
+    </head>
+    <body>
+
+        <input id="entrada" type="text" value="texto padrao">
+        <span id="textospan">Texto nao modificado</span>              
+
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+
+        <script>
+
+            $("#entrada").change(function(){
+                var texto_alterado = 'o texto foi alterado para ... ' + $("#entrada").val();
+
+                $("#textospan").text(texto_alterado);
+            })
+
+        </script>
+
+    </body>
+</html>

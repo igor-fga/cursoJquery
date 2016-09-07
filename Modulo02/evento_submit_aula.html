@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>        
+    </head>
+    <body>
+        <p>Digite um texto para validacao.</p>
+        <form action="">
+            <div>
+                <input type="text">
+                <input type="submit">
+            </div>
+        </form>
+
+        <script>
+            $("form").change(function(event){
+                if($("input").val()=== "jquery") {
+
+                                      
+                    alert("OK texto correto");
+                }
+                else {
+                    $("input").css("background-color","yellow");
+                    alert("Por favor digite o texto correto");
+                }
+                
+            });
+        </script>
+    </body>
+
+</html>

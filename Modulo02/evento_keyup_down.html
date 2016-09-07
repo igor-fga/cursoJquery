@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletor</title>       
+    </head>
+    <body>
+
+        <input id="entrada" type="text" value="texto">
+        <span id="saida"></span>              
+
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+
+        <script>
+
+            $("#entrada").keyup(function(){
+                
+                var conteudo =  $("#entrada").val();
+
+                $("#saida").text(conteudo);
+            })
+
+        </script>
+
+    </body>
+</html>

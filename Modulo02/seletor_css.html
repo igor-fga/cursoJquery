@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exemplo Jquery</title>
+    </head>
+    <body>
+        
+        <input id="botao1" type="button" value='clicar'/>
+        <input id="botao2" type="button" value='segundo botao'/>
+        
+        <p id='primeiro'> Paragrafo de teste 1 </p>
+        <p id='segundo'> Paragrafo de teste 2 </p>
+        
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+        
+        <script>
+        
+            $('#botao1').dblclick(function() {
+               
+                $("#primeiro").css('background-color','red');
+                
+            });
+            
+            $('#botao2').click(function() {
+               
+                $("#segundo").css('background-color','blue');
+                
+            });
+        
+        </script>
+        
+
+                    
+    </body>
+</html>

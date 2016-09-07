@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Seletor</title>
+        <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+
+        <script>
+            i = 0;
+
+            $(document).ready(function(){
+                $("input").keypress(function(){
+                    $("span").text(i+=1);
+
+                    if(event.which == 13) {
+                        alert("Voce pressionou enter");
+                    }
+                });
+            });
+        </script>
+
+    </head>
+    <body>
+        
+        Digite um texto: <input type="text">
+        <p>Teclas pressionadas: <span>0</span>
+
+    </body>
+</html>
