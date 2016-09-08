@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery UI Tabs</title>
+        <meta charset="utf-8">
+        <link href="js/jquery-ui.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Primeiro</a></li>
+                <li><a href="#tabs-2">Segundo</a></li>
+                <li><a href="#tabs-3">Terceiro</a></li>
+            </ul>
+            <div id="tabs-1">Esta e a primeira tabulacao</div>
+            <div id="tabs-2">Esta e a segunda tabulacao</div>
+            <div id="tabs-3">Esta e a terceira tabulacao</div>
+            
+        </div>
+        
+
+        
+        <button id="alteraranimacao">Alterar a animacao</button>
+        
+        
+        <script src="js/jquery-3.1.0.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        
+        <script>
+            
+             $( "#tabs" ).tabs();
+            
+        </script>
+    
+    </body>
+
+</html>
